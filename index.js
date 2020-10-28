@@ -1,14 +1,15 @@
-const draw = document.getElementById("canvas");
-const dimention = draw.getContext("2d");
-draw.width = window.innerWidth;
+const canvas = document.getElementById("canvas");
+const button = document.getElementsByClassName("button");
+canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
+const dimention = canvas.getContext("2d");
 
 const maxLevel = 5;
 const branches = 2;
 const sides = Math.floor(Math.random() * 10 + 3);
 const spread = Math.random() * 48 + 0.51;
 
-dimention.translate(draw.width / 2, draw.height / 2);
+dimention.translate(canvas.width / 2, canvas.height / 2);
 
 const angle = Math.PI * 2 * spread;
 
@@ -19,7 +20,7 @@ const drawLine = (level) => {
   dimention.lineWidth = 2;
   dimention.beginPath();
   dimention.moveTo(0, 0);
-  dimention.lineTo(50, 0);
+  dimention.lineTo(150, 0);
   dimention.stroke();
 
   for (let i = 1; i < branches + 1; i++) {
