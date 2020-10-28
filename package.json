@@ -1,0 +1,17 @@
+{
+  "name": "fractal",
+  "version": "1.0.0",
+  "description": "Programa de graficacion de un fractal",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "fractal",
+    "graficacion",
+    "javascript",
+    "canvas"
+  ],
+  "author": "ItsDavidHdez",
+  "license": "MIT"
+}
